@@ -89,8 +89,15 @@ aside a{
     padding:5px 0;
     font-size:14px;
     font-weight: 500;
+    transition: .5s;
 
 }
+
+aside a:hover{
+    color:var(--header-onhover-color);
+}
+
+
 aside button.close{
     font-size: 24px;
     border:0;

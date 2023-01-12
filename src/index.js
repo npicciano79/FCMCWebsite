@@ -1,9 +1,6 @@
 import _ from 'lodash';
-import '../styles/styleMain.css'
+//main styles import
+import '../styles/styleMain.css';
+//aside menu import
+import './aside.js';
 
-function component(){
-    
-
-}
-
-document.body.appendChild(component());
