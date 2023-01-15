@@ -1,6 +1,7 @@
 import _, { forEach } from 'lodash';
 //main styles import
 import '../styles/styleMain.css';
+import '../styles/styleHome.css';
 //aside menu import
 import './aside.js';
 import createHome from '../src/home';
@@ -27,7 +28,7 @@ function setActiveLinks(class_link){
 //call login/register.js
 
 
-//creates main body tag
+//determine page display based on user click or page load
 function createBody(){
     const main = document.createElement('main');
     main.classList.add('main');
