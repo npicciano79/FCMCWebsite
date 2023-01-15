@@ -4,33 +4,15 @@ import '../styles/styleMain.css';
 //aside menu import
 import './aside.js';
 
-
-
-const links=document.querySelectorAll('[link]');
-
-
-links.forEach(e=>{
-    e.addEventListener('click',()=>{
+//setactive function 
+function setActiveLinks(class_link){
+    const links=document.querySelectorAll('[link]');
+    links.forEach(e=>{
+        e.addEventListener('click',()=>{
         console.log(e.id);
     })
 })
-
-
-
-
-
-//creates main body tag
-function createBody(){
-    const main = document.createElement('main');
-    main.classList.add('main');
-    main.setAttribute('id',"main");
-    return main;
-
 }
-
-
-
-
 
 //call home.js
 
@@ -43,9 +25,20 @@ function createBody(){
 //call login/register.js
 
 
+//creates main body tag
+function createBody(){
+    const main = document.createElement('main');
+    main.classList.add('main');
+    main.setAttribute('id',"main");
+    return main;
+
+}
+
+
 function siteInit(){
     const content = document.getElementById('content');
     content.appendChild(createBody())
+    setActiveLinks(document.querySelectorAll('.link'));
 }
 
 siteInit();

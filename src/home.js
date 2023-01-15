@@ -1,3 +1,5 @@
+//create FCMC home page 
+
 function mainHome(){
     const home=document.createElement('div');
     home.classList.add('home');
