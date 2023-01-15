@@ -3,6 +3,8 @@ import _, { forEach } from 'lodash';
 import '../styles/styleMain.css';
 //aside menu import
 import './aside.js';
+import createHome from '../src/home';
+
 
 //setactive function 
 function setActiveLinks(class_link){
@@ -30,8 +32,9 @@ function createBody(){
     const main = document.createElement('main');
     main.classList.add('main');
     main.setAttribute('id',"main");
+    main.appendChild(createHome())
     return main;
-
+   
 }
 
 

@@ -139,6 +139,17 @@ eval("//open menu on click\r\nconst openMenu = () =>{\r\n    document.querySelec
 
 /***/ }),
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//create FCMC home page \r\n\r\nfunction mainHome(){\r\n    const home=document.createElement('div');\r\n    home.classList.add('home');\r\n\r\n    const homeImage=document.createElement('img');\r\n    homeImage.src=\"./images/homeImages1.png\";\r\n    homeImage.alt='homeImage';\r\n\r\n    home.appendChild(homeImage);\r\n    const home2=document.createElement('h3');\r\n    home2.textContent='test test test'\r\n    home.appendChild(home2)\r\n\r\n    return home;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\nfunction createHome(){\r\n    const main=document.getElementById('content');\r\n    main.textContent='hometest';\r\n    main.appendChild(mainHome())\r\n\r\n\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHome);\r\n\n\n//# sourceURL=webpack://fcmc/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -146,7 +157,7 @@ eval("//open menu on click\r\nconst openMenu = () =>{\r\n    document.querySelec
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_styleMain_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/styleMain.css */ \"./styles/styleMain.css\");\n/* harmony import */ var _aside_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./aside.js */ \"./src/aside.js\");\n/* harmony import */ var _aside_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_aside_js__WEBPACK_IMPORTED_MODULE_2__);\n\r\n//main styles import\r\n\r\n//aside menu import\r\n\r\n\r\n//setactive function \r\nfunction setActiveLinks(class_link){\r\n    const links=document.querySelectorAll('[link]');\r\n    links.forEach(e=>{\r\n        e.addEventListener('click',()=>{\r\n        console.log(e.id);\r\n    })\r\n})\r\n}\r\n\r\n//call home.js\r\n\r\n//call about.js\r\n\r\n//call contact.js\r\n\r\n//call news.js\r\n\r\n//call login/register.js\r\n\r\n\r\n//creates main body tag\r\nfunction createBody(){\r\n    const main = document.createElement('main');\r\n    main.classList.add('main');\r\n    main.setAttribute('id',\"main\");\r\n    return main;\r\n\r\n}\r\n\r\n\r\nfunction siteInit(){\r\n    const content = document.getElementById('content');\r\n    content.appendChild(createBody())\r\n    setActiveLinks(document.querySelectorAll('.link'));\r\n}\r\n\r\nsiteInit();\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://fcmc/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_styleMain_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/styleMain.css */ \"./styles/styleMain.css\");\n/* harmony import */ var _aside_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./aside.js */ \"./src/aside.js\");\n/* harmony import */ var _aside_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_aside_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _src_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/home */ \"./src/home.js\");\n\r\n//main styles import\r\n\r\n//aside menu import\r\n\r\n\r\n\r\n\r\n//setactive function \r\nfunction setActiveLinks(class_link){\r\n    const links=document.querySelectorAll('[link]');\r\n    links.forEach(e=>{\r\n        e.addEventListener('click',()=>{\r\n        console.log(e.id);\r\n    })\r\n})\r\n}\r\n\r\n//call home.js\r\n\r\n//call about.js\r\n\r\n//call contact.js\r\n\r\n//call news.js\r\n\r\n//call login/register.js\r\n\r\n\r\n//creates main body tag\r\nfunction createBody(){\r\n    const main = document.createElement('main');\r\n    main.classList.add('main');\r\n    main.setAttribute('id',\"main\");\r\n    main.appendChild((0,_src_home__WEBPACK_IMPORTED_MODULE_3__[\"default\"])())\r\n    return main;\r\n   \r\n}\r\n\r\n\r\nfunction siteInit(){\r\n    const content = document.getElementById('content');\r\n    content.appendChild(createBody())\r\n    setActiveLinks(document.querySelectorAll('.link'));\r\n}\r\n\r\nsiteInit();\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://fcmc/./src/index.js?");
 
 /***/ })
 
