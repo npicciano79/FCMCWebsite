@@ -5,7 +5,13 @@ import '../styles/styleHome.css';
 //aside menu import
 import './aside.js';
 import createHome from '../src/home';
+import textDisplay from './load';
 
+
+//on page load, call load.js and display intro text
+window.addEventListener("load", e => {
+    
+  });
 
 //setactive function 
 function setActiveLinks(class_link){
@@ -33,7 +39,7 @@ function createBody(){
     const main = document.createElement('main');
     main.classList.add('main');
     main.setAttribute('id',"main");
-    main.appendChild(createHome())
+    //main.appendChild(createHome())
     return main;
    
 }
