@@ -22,24 +22,22 @@
         display: initial;
     }
 }
-.main-logo{
-    font-size: var(--header-font-size);
-}
+
 
 header{
     background-color:transparent;
     color:var(--header-text-color);
-    display: flex;
-    grid-template-columns: auto;
-    padding:5px 20px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
     position:fixed;
     top:0;
     z-index: 2;
     width:100%;
-    justify-content: center;
-    align-items: center;
-    
+    margin-top:2px;
 
+}
+img{
+    width:30%;
 }
 
 header a{
@@ -47,11 +45,31 @@ header a{
     font-size: var(--links-font-size);
     padding:5px 10px;
     transition: .5s;
+    text-transform: uppercase;
+    
 }
 
 header a:hover{
     color:var(--header-onhover-color);
+    background-color: #fff;
 
+}
+header .logo{
+    text-align: left;
+}
+
+header nav.right{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+   
+}
+header nav.center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -65,14 +83,6 @@ header a:hover{
     }
 }
 
-.center{
-    text-align: center;
-}
-
-.right{
-    text-align: right;
-    margin-left:40%;
-}
 
 /*aside menu*/
 aside{
