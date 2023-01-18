@@ -17,6 +17,7 @@
 .main-text{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding:150px;
 }
 .main-title{
@@ -25,7 +26,7 @@
 
 .main-text button{
    width:30%;
-   display: inline;
+   display: flex;
    justify-content: center;
    align-items: center;
    background-color: transparent;
@@ -37,6 +38,7 @@
    cursor: pointer;
    transition: .3s;
    text-align: center;
+   
 }
 .main-text button:hover{
     background-color: var(--header-onhover-color);
