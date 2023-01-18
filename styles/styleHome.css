@@ -5,12 +5,40 @@
     text-decoration: none;
     list-style: none;
 }
-.home{
-    display: initial;
- 
+:root{
+    --nav-background-color:#434343;
+    --header-text-color:#ffffff;
+    --header-onhover-color:#379DF4;
+    --header-font-size:18px;
+    --links-font-size:16px;
+    font-family:'Oswald', sans-serif;
+ }
 
+.main-text{
+    display: flex;
+    flex-direction: column;
+    padding:150px;
 }
-.home img{
-    width:55%;
+.main-title{
+    padding:10px;
+}
 
+.main-text button{
+   width:30%;
+   display: inline;
+   justify-content: center;
+   align-items: center;
+   background-color: transparent;
+   color:white;
+   border:2px white solid;
+   border-radius: 5px;
+   text-transform: uppercase;
+   font-size: 30px;
+   cursor: pointer;
+   transition: .3s;
+   text-align: center;
+}
+.main-text button:hover{
+    background-color: var(--header-onhover-color);
+    
 }
