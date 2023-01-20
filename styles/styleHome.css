@@ -25,10 +25,10 @@
 }
 
 .main-text button{
-   width:30%;
+   width:20%;
    display: flex;
    justify-content: center;
-   align-items: center;
+   align-items: flex-start;
    background-color: transparent;
    color:white;
    border:2px white solid;
@@ -38,6 +38,8 @@
    cursor: pointer;
    transition: .3s;
    text-align: center;
+   margin-top: 1%;
+   
    
 }
 .main-text button:hover{
