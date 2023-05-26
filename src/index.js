@@ -1,11 +1,12 @@
 import _, { forEach } from 'lodash';
 //main styles import
 import '../styles/styleMain.css';
-import '../styles/styleHome.css';
+//import '../styles/styleHome.css';
 //aside menu import
 import './aside.js';
 import createHome from '../src/home';
 import textDisplay from './load';
+import showTitleSub from './mainTitleTextDisplay';
 
 
 //on page load, call load.js and display intro text
@@ -39,16 +40,19 @@ function createBody(){
     const main = document.createElement('main');
     main.classList.add('main');
     main.setAttribute('id',"main");
-    //main.appendChild(createHome())
+    main.appendChild(createHome())
     return main;
    
 }
 
 
 function siteInit(){
-    const content = document.getElementById('content');
-    content.appendChild(createBody())
-    setActiveLinks(document.querySelectorAll('.link'));
+    //call showTitleSub from mainTItleTextDisplay
+    showTitleSub();
+
+    //const content = document.getElementById('content');
+    //content.appendChild(createBody())
+    //setActiveLinks(document.querySelectorAll('.link'));
 }
 
 siteInit();

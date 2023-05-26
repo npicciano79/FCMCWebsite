@@ -20,8 +20,8 @@ function mainHome(){
 
 
 function createHome(){
-    const main=document.getElementById('content');
-    main.appendChild(mainHome())
+    //const main=document.getElementById('content');
+    //main.appendChild(mainHome())
 
 
 }
